@@ -11,5 +11,5 @@ docker compose up
 2. At first, http://localhost:3000/cookie cannot be accessed (redirected to login page)
 3. After login, you can see the decoded JWT access_token in http://localhost:3000/cookie.
 
-User: admin
+User: admin  
 Password: password
