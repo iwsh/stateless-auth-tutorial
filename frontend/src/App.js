@@ -2,7 +2,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Login from "./Login";
 import ShowCookie from "./ShowCookie";
-import { RequireToken, setToken } from "./Auth";
+import { RequireToken } from "./Auth";
 
 function App() {
   return (

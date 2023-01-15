@@ -7,7 +7,7 @@ export function RequireToken({ children }) {
 
   const cookieList = cookies.split(";");
   for (const cookie of cookieList) {
-    const [name, value] = cookie.split("=");
+    const name = cookie.split("=")[0];
     if (name.trim() === cookieName) {
       return children;
     }

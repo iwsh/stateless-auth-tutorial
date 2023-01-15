@@ -5,7 +5,13 @@ services:
     volumes:
       - ./frontend:/app
     working_dir: /app
-    command: npm start
+    command: >
+      sh -c '
+        echo "installing packages... (This may takes few minuites)"
+        npm install &&
+        echo "install completed!"
+        npm start
+      '
     ports:
       - "3000:3000"
     depends_on:
